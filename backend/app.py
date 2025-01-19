@@ -119,23 +119,5 @@ def apiAnime():
 def apiAnimeDados():
     return jsonify(ZeroNoTsukaima, DragonBallZ, SwordArtOnline, NarutoShippuden, OnePiece)
 
-
-
-
-
-
-@app.route('/api/dados', methods=['POST'])
-def api():
-
-    nome = request.form.get('nome')
-    if nome == 'teste':
-        valor = 'acetavel'
-    else:
-        valor = 'seila'
-
-    return jsonify({'messagem': valor}), 200
-
-if __name__=="__main__":
-    app.run(debug=True)
-
+app = app
 # http://127.0.0.1:5000/api/dados
