@@ -1,0 +1,81 @@
+.container{
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 32rem;
+    margin-top: 5%;
+    border-radius: 1rem;
+}
+.imagemDeFundo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(1rem);
+}
+
+.formulario div{
+    display: flex;
+    flex-direction: column;
+}
+/*display: 'flex', flexDirection: 'row', alignItems: 'center'*/
+.nomeDoPersonagemInputContainer{
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.personagem{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 1rem;
+}
+.simbolo{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 1rem;
+}
+.fieldsetSimbolu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+}
+.fieldsetSimbolu div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 19rem;
+}
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333;
+}
+/*Banner Anime Resultado*/
+.bannerAnimeResultado{
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 1rem;
+    transition: width ease 2s;
+}
+
+.assistirAnime{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    bottom: -76%;
+    border: 5px solid;
+    border-image: linear-gradient(to right, rgb(255, 84, 170), blue) 1;
+    width: 5rem;
+    height: 2rem;
+
+}
+.assistirAnime:active{
+    scale: 1.1;
+}
