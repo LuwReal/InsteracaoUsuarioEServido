@@ -8,7 +8,7 @@ function BannerAnime(){
 
 
    useEffect(()=>{
-    fetch('http://127.0.0.1:5000/api/dadosAnimes')
+    fetch('https://interacao-usuario-e-servido-mwkb.vercel.app/api/dadosAnimes')
     .then((response) => response.json())
     .then((data) => setDadosSite(data[Math.floor(Math.random() * 4)]))
 
@@ -24,7 +24,7 @@ function BannerAnime(){
     const EnviodeDadosFormularioAnime = async(event) =>{
         event.preventDefault();
 
-        const response = await fetch('http://127.0.0.1:5000/api/animes', {
+        const response = await fetch('https://interacao-usuario-e-servido-mwkb.vercel.app/api/animes', {
             method: 'POST',
             header: {
                 'Content-Type':'application/x-www-form-urndercode',
